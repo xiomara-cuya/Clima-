@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>[ Escribe un título para tu app ]</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        <header class="container">
+            <h1>CLIMA PERÙ</h1>
+            <p>Aqui veremos el clima de nuestro pais.</p>
+        </header>
+
+        <main class="container">
+            <section class="buscador">
+                <select id="selectorCiudad" class="form-control">
+                    <option value="lima">Lima</option>
+                    <option value="cusco">Cusco</option>
+                    <option value="arequipa">Arequipa</option>
+                    <option value="trujillo">Trujillo</option>
+                    <option value="piura">piura</option>
+                    <option value="iquitos">iquitos</option>
+                    <option value="puno">puno</option>
+                    <option value="huancayo">huancayo</option>
+                </select>
+
+                <button id="btnConsultar" class="form-control w-20 mt-5 bg-dark text-white">VER CLIMA</button>
+            </section>
+
+            <p id="mensajeError"></p>
+
+            <section id="resultado" class="card p-3 my-5"></section>
+        </main>
+
+        <script src="app.js"></script>
+        <script src="appcomplemento.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"
+        ></script>
+        <footer>
+            <p>&copy; 2026 Todos los derechos reservados a Xiomara Cuya</p>
+        </footer>
+    </body>
+</html>
